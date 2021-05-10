@@ -1,0 +1,237 @@
+body {
+}
+
+.square {
+    border: 5px solid black;
+    top: 50%;
+    left: 50%;
+    margin-left: 200px;
+    margin-top: 100px;
+    width: 650px;
+    height: 650px;
+    background: url('background.jpg');
+}
+
+/*https://www.w3schools.com/howto/howto_css_shapes.asp*/  /*this website was helpful to teach how to create the shapes(apple, snake, obstacles). I changed several numbers for all the objects*/
+#apple {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    
+   
+}
+
+#snake {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: limegreen;
+    margin: -2px;
+    
+    
+
+
+}
+/*The w3schools website was really useful when creating all the animations. I got the idea from there and changed it based on my liking.*/
+/*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-direction*/
+/*https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp*/
+/*https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp*/
+#obstacle1{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    bottom: 50%;
+    background-color: black;
+    animation-name: obstacle1;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+
+   
+}
+@keyframes obstacle1 {
+    0% {
+        background:yellow;
+        left: 50%;
+        bottom: 50%;
+    }
+    25% {
+        background: blue;
+        left: 0%;
+        bottom: 50%;
+    }
+    50% {
+        background: purple;
+        left: 90%;
+        bottom: 50%;
+    }
+    75% {
+        background: aqua;
+        left: 0%;
+        bottom: 50%;
+    }
+    100% {
+        background: black;
+        left: 50%;
+        bottom: 50%;
+    }
+}
+
+#obstacle2 {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    bottom: 50%;
+    background-color: black;
+    animation-name: obstacle2;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+}
+
+@keyframes obstacle2 {
+    0% {
+        background: yellow;
+        left: 0%;
+        bottom: 50%;
+    }
+
+    25% {
+        background: blue;
+        left: 90%;
+        bottom: 50%;
+    }
+
+    50% {
+        background: purple;
+        left: 0%;
+        bottom: 50%;
+    }
+
+    75% {
+        background: aqua;
+        left: 90%;
+        bottom: 50%;
+    }
+
+    100% {
+        background: black;
+        left: 0%;
+        bottom: 50%;
+    }
+}
+
+#obstacle3 {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    left: 150px;
+    bottom: 200px;
+    background-color: black;
+    animation-name: obstacle3;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+}
+
+@keyframes obstacle3 {
+    0% {
+        background: yellow;
+        left: 150px;
+        bottom: 200px;
+    }
+
+    25% {
+        background: aqua;
+        left: 30px;
+        bottom: 200px;
+    }
+
+    50% {
+        background: purple;
+        left: 550px;
+        bottom: 200px;
+    }
+
+    75% {
+        background: lightpink;
+        left: 10px;
+        bottom: 200px;
+    }
+
+    100% {
+        background: black;
+        left: 150px;
+        bottom: 200px;
+    }
+}
+
+#obstacle4 {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    left: 500px;
+    bottom: 600px;
+    background-color: black;
+    animation-name: obstacle4;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+}
+
+@keyframes obstacle4 {
+    0% {
+        background: yellow;
+        left: 500px;
+        bottom: 600px;
+    }
+
+    25% {
+        background: aqua;
+        left: 550px;
+        bottom: 600px;
+    }
+
+    50% {
+        background: purple;
+        left: 30px;
+        bottom: 600px;
+    }
+
+    75% {
+        background: lightpink;
+        left: 550px;
+        bottom: 600px;
+    }
+
+    100% {
+        background: black;
+        left: 500px;
+        bottom: 600px;
+    }
+}
+
+#score {
+    color: black;
+    font-size: 50px;
+    position:relative;
+    left: 10px;
+    bottom: 930px;
+}
+
+#music {
+    color: black;
+    position: relative;
+    left:560px;
+    bottom:710px;
+
+}
+
